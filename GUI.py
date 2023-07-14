@@ -7,9 +7,9 @@ import tensorflow_hub as hub
 import tensorflow_text as text
 
 print ("Loading Models.....")
-Model1=tf.keras.models.load_model("./Model_1_Uncase.h5",custom_objects={'KerasLayer':hub.KerasLayer})
+Model2=tf.keras.models.load_model("./Bert_uncased_model_Tiwtter.h5",custom_objects={'KerasLayer':hub.KerasLayer})
 
-Model2=tf.keras.models.load_model("./Model_2_Bert_Uncase.h5",custom_objects={'KerasLayer':hub.KerasLayer})
+Model1=tf.keras.models.load_model("./Bert_uncased_model_Reddit.h5",custom_objects={'KerasLayer':hub.KerasLayer})
 classes=['Neutral', 'Positive', 'Negative']
 
 def show_message():
